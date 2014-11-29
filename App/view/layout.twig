@@ -47,7 +47,7 @@
 
 <footer id="footer">
 	<div class="container">
-		<div class="row-fluid">
+		<div class="row">
 			<div class="col-sm-3">
 				<h4>BET GD-MH</h4>
 				<p>S.A.R.L au capital de 40.000 €</br>
@@ -55,9 +55,11 @@
 				APE 7215</p>
 			</div>
 			<div class="col-sm-6 col-sm-offset-3">
-				<img class="pull-right img-responsive" src="{{ url('index.index') }}web/img/footer/opqibi.jpg" alt="Logo OPQIBI">
-				<img class="pull-right img-responsive" src="{{ url('index.index') }}web/img/footer/syntec.png" alt="Logo Syntec">
-				<img class="pull-right img-responsive" src="{{ url('index.index') }}web/img/footer/usg.jpg" alt="Logo USG">
+				<table class="pull-right text-centered">
+					<td><img class="img-responsive" src="{{ url('index.index') }}web/img/footer/opqibi.jpg" alt="Logo OPQIBI"></td>
+					<td><img class="img-responsive" src="{{ url('index.index') }}web/img/footer/syntec.png" alt="Logo Syntec"></td>
+					<td><img class="img-responsive" src="{{ url('index.index') }}web/img/footer/usg.jpg" alt="Logo USG"></td>
+				</table>
 			</div>
 		</div>
 		<div class="col-sm-8 col-sm-offset-2 text-center">
@@ -69,5 +71,17 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ url('index.index') }}web/js/gdmh.js"></script>
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30414939-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
