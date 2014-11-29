@@ -1,0 +1,113 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<section class="prestation-bg">
+	<div class="col-sm-3 text-center" style="padding:10px;background-color:rgba(3,3,3,.8)">
+		<h2>Nos prestations</h2>
+	</div>
+</section>
+
+<div class="divider" style="border-top : 1px solid;"></div>
+
+<div class="container">
+
+	<div class="panel-group" id="accordion">
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+	          Sondages
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseOne" class="panel-collapse collapse in">
+	      <div class="panel-body">
+			<ul>
+				<li>par carottage</li>
+				<li>à la tarière mécanique</li>
+				<li>au taillant en rotopercussion</li>
+				<li>à la tarière à la main</li>
+			</ul>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+	          Essais
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseTwo" class="panel-collapse collapse">
+	      <div class="panel-body">
+			<ul>
+				<li>au pressiomètre Ménard</li>
+				<li>au pressiomètre dynamique</li>
+				<li>de perméabilité Lebranc ou Lugeen</li>
+				<li>au phicomètre</li>
+				<li>de laboratoire
+					<ul>
+						<li>teneurs en eau</li>
+						<li>granulemétrie</li>
+						<li>limites d'Atterberg</li>
+						<li>essai CBR</li>
+						<li>essai Proctor</li>
+						<li>essai de cisaillement</li>
+						<li>etc ...</li>
+				</li>
+			</ul>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+	          Missions géotechniques
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseThree" class="panel-collapse collapse">
+	      <div class="panel-body">
+			<ul>
+				<li>préalable G1</li>
+				<li>de conception G2</li>
+				<li>de suivi d'exécution G3</li>
+				<li>de supervision G4</li>
+				<li>de diagnostic G5</li>
+			</ul>
+	      </div>
+	    </div>
+	  </div>
+	
+	<div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	          Piézomètres
+	      </h4>
+	  </div>
+	</div>
+	
+	<div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	          Puits de pompage d'essai diamètre <= 100 mm
+	      </h4>
+	  </div>
+	</div>
+	
+	<div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h4 class="panel-title">
+	          Analyse des résultats
+	      </h4>
+	  	</div>
+	</div>
+	</div>
+</div>
+
+<div class="divider"></div>
+	
+{% endblock %}

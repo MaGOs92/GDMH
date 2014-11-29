@@ -1,0 +1,86 @@
+{% extends "layout_admin.twig" %}
+
+{% block content %}
+
+<header>
+	<nav class="navbar navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<h3>Administration de gd-mh.fr</h3>
+    		</div>    		
+    		<div class="collapse navbar-collapse" id="navbar">
+				<button type="button" class="btn btn-gdmh pull-right" data-toggle="modal" data-target="#ajoutercontact">Ajouter un contact</button>
+      		</div>
+      	</div>
+      </nav>
+</header>
+
+<body>
+
+<!-- Modal ajouter un contact -->
+
+<div class="modal fade" id="ajoutercontact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Nouveau contact</h4>
+      </div>
+      <div class="modal-body">
+		<form role="form">
+  			<div class="form-group">
+    			<label for="entreprise">Entreprise : </label>
+    			<input type="text" class="form-control" id="entreprise"/>
+  			</div>
+  			<div class="form-group">
+    			<label for="mdp">Nom : </label>
+    			<input type="nom" class="form-control" id="nom"/>
+  			</div>
+  			<div class="form-group">
+    			<label for="mdp">Prénom : </label>
+    			<input type="nom" class="form-control" id="prenom"/>
+  			</div>
+  			<div class="form-group">
+    			<label for="mdp">Téléphone : </label>
+    			<input type="tel" class="form-control" id="telephone"/>
+  			</div>
+  			<div class="form-group">
+    			<label for="mdp">E-mail : </label>
+    			<input type="email" class="form-control" id="email"/>
+  			</div>
+		</form>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Sauvegarder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+<div class="divider"></div>
+
+<div class="container">
+	
+	<table id="listecontact" class="table table-hover">
+		<caption>
+			<div class="input-group" style="padding-bottom:20px;">
+				<span class="input-group-addon">@</span>
+				<input id="recherchecontact" class="form-control" type="text" placeholder="Rechercher un contact"/>
+			</div>
+		</caption>
+		<thead>
+			<th>Entreprise</th>
+			<th>Nom</th>
+			<th>Prénom</th>
+			<th>Plus d'information</th>
+		</thead>
+		
+		<tbody>
+		
+		</tbody>	
+	</table>	
+</div>
+  			
+{% endblock %}

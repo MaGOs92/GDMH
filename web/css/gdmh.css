@@ -1,0 +1,191 @@
+/*
+Couleurs GD MH
+Couleur principale : #1C18F5
+Couleur secondaire 1 : #3E3BF5
+Couleur secondaire 2 : #6764F3
+*/
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px arial,sans-serif;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -200px;
+  /* Pad bottom by footer height */
+  padding: 0 0 200px;
+}
+
+#footer {
+  height: 200px;
+  background-color: #000000;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#footer p {
+  color: white;
+}
+
+#footer h4 {
+  color: white;
+}
+
+.navbar-inverse {
+  background-color: rgba(3,3,3,0.8);
+}
+
+.navbar-inverse .navbar-brand{
+  color : white;
+}
+
+.navbar-inverse .navbar-brand:hover{
+  background-color: white;
+  color : black;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color : white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  background-color: white;
+  color : black;
+}
+
+.well {
+  background-color: #E5E5E5;
+  border: 0px;
+  border-radius: 0px;
+}
+
+
+.btn-gdmh {
+  border-style: solid;
+  color: white;
+  background-color: #777;
+  margin-top: 8px;
+  border-radius: 0px;
+}
+
+.btn-gdmh:hover {
+  color : black;
+  background-color: white;
+}
+
+.btn-default{
+  color : white;
+  background-color: rgba(3,3,3,0.8);
+  border-radius: 0px;
+  border: 0px;
+}
+
+.carousel-caption {
+  background-color: rgba(3,3,3,0.8);
+}
+
+.custom-carousel {
+  padding: 0px;
+  border : 1px solid;
+}
+
+section {
+  color: #ffffff;
+  height: auto !important;
+  height: 100%;
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+}
+
+.divider {
+	height: 6.25vh;
+}
+
+.index-bg {
+    min-height : 100vh;
+    padding-top : 60vh;
+    padding-left : 5vh;
+	 background: url('./../img/backgrounds/index.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.contact-bg {
+	min-height: 50vh;
+	padding-top: 10vh;
+	padding-right: 2.5vh;
+	background: url('./../img/backgrounds/contact.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.machine-bg {
+	min-height: 50vh;
+	padding-top: 10vh;
+	padding-right: 2.5vh;
+	background: url('./../img/backgrounds/machine.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.prestation-bg {
+	min-height: 50vh;
+	padding-top: 10vh;
+	padding-left: 2.5vh;
+	background: url('./../img/backgrounds/prestation.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.geotechnique-bg {
+	min-height: 50vh;
+	padding-top: 10vh;
+	padding-right: 2.5vh;
+	background: url('./../img/backgrounds/geotechnique.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.reference-bg {
+	min-height: 50vh;
+	padding-top: 10vh;
+	padding-right: 2.5vh;
+	background: url('./../img/backgrounds/reference.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.connexion-bg {
+	 background: url('./../img/backgrounds/connexion.jpg') no-repeat center center fixed;
+}
+
+.connexion-pannel {
+	background-color: white;
+	margin-top: 30vh;
+  	border : 1px solid;
+  }
+
+.carnet-adresse {
+	margin-top: 10vh;
+	border: solid 1px;
+}

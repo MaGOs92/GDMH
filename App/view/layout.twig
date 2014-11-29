@@ -1,0 +1,73 @@
+{# layout principal #}
+<!doctype html>
+
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>GD-MH Géotechnique</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url('index.index') }}web/css/gdmh.css">
+    <link rel="icon" href="{{ url('index.index') }}web/img/other/favicon.ico" />
+</head>
+<body>
+<div id="wrap">
+<header>
+
+	<!-- Barre de navigation -->
+	
+	<!-- Logo de l'entreprise -->
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="{{ path("index.index") }}">Accueil</a>
+    		</div>
+    		
+    <!-- Liens -->
+    		
+    		<div class="collapse navbar-collapse" id="navbar">
+      			<ul class="nav navbar-nav">
+        			<li><a href="{{ path("index.prestation") }}">Nos prestations</a></li>
+        			<!-- <li><a href="{{ path("index.geotechnique") }}">La géotechnique?</a></li> -->
+        			<li><a href="{{ path("index.machine") }}">Nos machines</a></li>
+        			<li><a href="{{ path("index.reference") }}">Nos références</a></li>
+        			<li><a href="{{ path("index.contact") }}">Contact</a></li>
+      			</ul>
+      		</div>
+      	</div>
+      </nav>
+      
+</header>
+
+    {% block content %}
+    
+    {% endblock %}
+
+</div>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="col-sm-3">
+				<h4>BET GD-MH</h4>
+				<p>S.A.R.L au capital de 40.000 €</br>
+				RCS Créteil R30214238</br>
+				APE 7215</p>
+			</div>
+			<div class="col-sm-6 col-sm-offset-3">
+				<img class="pull-right img-responsive" src="{{ url('index.index') }}web/img/footer/opqibi.jpg" alt="Logo OPQIBI">
+				<img class="pull-right img-responsive" src="{{ url('index.index') }}web/img/footer/syntec.png" alt="Logo Syntec">
+				<img class="pull-right img-responsive" src="{{ url('index.index') }}web/img/footer/usg.jpg" alt="Logo USG">
+			</div>
+		</div>
+		<div class="col-sm-8 col-sm-offset-2 text-center">
+			<div class="text-muted"></br>© 2014 BET GDMH. Les marques sont propriétés de leurs propriétaires respectifs. Tous droits réservés.</p>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ url('index.index') }}web/js/gdmh.js"></script>
+</body>
+</html>

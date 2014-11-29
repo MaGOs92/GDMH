@@ -1,0 +1,47 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<section class="reference-bg">
+	<div class="col-sm-3 col-sm-offset-9 text-center" style="padding:10px;background-color:rgba(3,3,3,.8)">
+		<h2>Nos références</h2>
+	</div>
+</section>
+
+<div class="divider" style="border-top : 1px solid;"></div>
+
+<div class="container">
+
+	<table class="table text-center">
+		<thead><h3>Ils nous font confiance</h3></thead>
+		<tbody>
+			<tr>
+				<td><img src="{{ url('index.index') }}web/img/clients/3f.jpg" alt="Logo 3f"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/artelia.jpg" alt="Logo Artelia"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/axim.jpg" alt="Logo Axim"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/becarre.jpg" alt="Logo Becarre"/></td>
+			</tr>
+			<tr>
+				<td><img src="{{ url('index.index') }}web/img/clients/bnp.jpg" alt="Logo BNP"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/bouygues.jpg" alt="Logo Bouygues"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/eiffage.jpg" alt="Logo Eiffage"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/fassio_viaud.jpg" alt="Logo Fasso Viaud"/></td>
+			</tr>
+			<tr>
+				<td><img src="{{ url('index.index') }}web/img/clients/fft.jpg" alt="Logo FFT"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/ikea.jpg" alt="Logo Ikea"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/logement_francilien.gif" alt="Logo Logement Francilien"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/nexity.jpg" alt="Logo Nexity"/></td>
+			</tr>
+			<tr>
+				<td><img src="{{ url('index.index') }}web/img/clients/segece.jpg" alt="Logo Segece"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/sesame.jpg" alt="Logo Sesame"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/stcloud.jpg" alt="Logo Mairie de Saint-Cloud"/></td>
+				<td><img src="{{ url('index.index') }}web/img/clients/the_carlyle_group.jpg" alt="Logo The Carlyle Group"/></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+	
+{% endblock %}

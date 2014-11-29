@@ -1,0 +1,76 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<section class="index-bg">
+	<div class="col-sm-4 text-center" style="padding:20px;background-color:rgba(3,3,3,.8)">
+		<img src="{{ url('index.index') }}web/img/logos/logo_index.png" alt="logo de GD-MH"/>
+		<h2>Etude de sol et fondations</h2>
+	</div>
+</section>
+
+<div id="presentation" class="divider" style="border-top : 1px solid;"></div>
+
+<div class="container">
+  	<div class="col-md-offset-1 col-md-10 col-md-offset-1">
+  		<h1 class="text-center">Qui sommes-nous?</h1>
+  		</br>
+    	<h4>
+			GD-MH a été crée en 1983 par Gilles Delhumeau et Michel Hugues, deux pioniers de la géotechnique française.</br></br>Depuis 1983, GD-MH a réalisé environ 10 000 études en France, principalement en région parisienne. Toutes les archives sont numérisées et accessibles en quelques secondes.</br></br>GD-MH a étudié les fondations de nombreuses tours, immeubles, écoles, piscines, stades, centres commerciaux, etc...
+		</h4>
+      
+  	</div>
+</div>
+  	
+<!-- Carousel -->
+
+<div class="divider"></div>
+	
+<div class="container">
+
+	<div id="carousel-quisommesnous" class="carousel slide col-md-offset-2 col-md-8 col-md-offset-2 custom-carousel" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-quisommesnous" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-quisommesnous" data-slide-to="1"></li>
+	    <li data-target="#carousel-quisommesnous" data-slide-to="2"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <img src="{{ url('index.index') }}web/img/slides/sondage.jpg" alt="Slide sondage">
+	      <div class="carousel-caption">
+	      	<h4>Sondages</h4>
+	      	<p>GD-MH réalise des sondages et des essais parfaitement adaptés au but recherché</p>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="{{ url('index.index') }}web/img/slides/etude.jpg" alt="Slide étude">
+	      <div class="carousel-caption">
+	      	<h4>Etude</h4>
+	      	<p>Les ingénieurs étudient les résultats et délivrent leur expertise</p>
+	      </div>
+	    </div>
+	    
+	    <div class="item">
+	      <img src="{{ url('index.index') }}web/img/slides/analyse.jpg" alt="Slide analyse">
+	      <div class="carousel-caption">
+	      	<h4>Analyse</h4>
+	      	<p>Les ingénieurs et les techniciens scrutent les échantillons de sol pour obtenir les meilleurs diagnostics</p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-quisommesnous" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-quisommesnous" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div>
+
+</div>
+  			
+{% endblock %}
